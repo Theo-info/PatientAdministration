@@ -1,5 +1,14 @@
 
 
 public class Patient {
-    private String name;
+   private final String name;
+   
+   public Patient(String name){
+       this.name = name;
+   }
+   
+   @Override
+   public String toString(){
+       return name;
+   }
 }
