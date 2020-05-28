@@ -1,0 +1,38 @@
+public class PatientenWarteschlange {
+    private final int N;
+    private int n;
+    private Patient[] patienten;
+    
+    public PatientenWarteschlange(int N){
+        this.N = N;
+        patienten = new Patient[N];
+        n = 0;
+    }
+    
+    public int size(){
+        return n;
+    }
+    
+    public boolean isEmpty(){
+       return n == 0;
+    }
+    
+    public void anmelden(int n, int N){
+        if (n == 12){
+            System.out.println("Das Wartezimmer ist voll, du kannst keinen Weiteren Patienten mehr Anmelden!");
+        }
+        else {
+        N = n;
+        N = n+1;
+        }
+    }
+   
+    public Patient aufrufen(){
+        return null;
+    }
+    
+    @Override
+    public String toString(){
+        return "nicht implementiert";
+    }
+}
